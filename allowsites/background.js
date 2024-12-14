@@ -1,3 +1,5 @@
+const allowedSites = ["example.com", "anotherexample.com"];
+
 chrome.storage.sync.get("allowedSites", (data) => {
   const allowedSites = data.allowedSites || [];
   
